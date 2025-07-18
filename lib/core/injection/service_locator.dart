@@ -11,7 +11,6 @@ import 'package:news_app/features/news/data/data_sources/news_remote_datasource.
 final locator = GetIt.instance;
 
 Future<void> init() async {
-
   // Use cases
   locator.registerLazySingleton(() => GetArticles(locator()));
 
