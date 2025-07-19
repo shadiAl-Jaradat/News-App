@@ -10,7 +10,7 @@ class ApiConstants {
   static const String contentTypeHeader = 'Content-Type';
   static const String applicationJson = 'application/json';
 
-  static const String apiKey = String.fromEnvironment('API_KEY', defaultValue: 'ea5b8995afc443e8171b71d88fa3daf5');
+  static const String apiKey = 'ea5b8995afc443e8171b71d88fa3daf5';
 
   // Endpoints
   static const String searchEndpoint = '/search';

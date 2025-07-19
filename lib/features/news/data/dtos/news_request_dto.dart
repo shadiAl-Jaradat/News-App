@@ -17,6 +17,7 @@ class NewsRequestDto {
 
   Map<String, dynamic> toQueryParams() {
     return {
+      'apikey': ApiConstants.apiKey,
       'q': query?.isNotEmpty == true ? query : 'latest news',
       if (category != null) 'category': category,
       'country': country,
