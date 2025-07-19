@@ -35,7 +35,6 @@ maintainability, and a seamless user experience across platforms.
 ---
 
 ## Screenshots
-> _Add screenshots here_
 
 | Home Screen                          | Article Details                            | Search                                   |
 |--------------------------------------|--------------------------------------------|------------------------------------------|
