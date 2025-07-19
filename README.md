@@ -39,7 +39,13 @@ maintainability, and a seamless user experience across platforms.
 
 | Home Screen                          | Article Details                            | Search                                   |
 |--------------------------------------|--------------------------------------------|------------------------------------------|
-| ![Home](assets/screenshots/home.png) | ![Details](assets/screenshots/details.png) | ![Search](assets/screenshots/search.png) |
+|<img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/487d5a4b-ee7d-4e13-a3e6-6b8b9d734e38" />|<img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/382f030b-26ae-4e4d-976c-1b3598bb9a4b" />|<img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/6149683d-c874-43e1-905f-d937383929c2" />|
+
+
+
+| Shimmer Loading                      | No Search Found                            | Error View                               |
+|--------------------------------------|--------------------------------------------|------------------------------------------|
+|<img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/1b55f35d-a481-4fe0-b62b-f586b36ce264" />|<img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/72f8fa7d-0a8e-441e-8de5-dbc82a674b97" />|<img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/0642f6d4-5ecc-4823-8169-5b1edd3ebb92" />|
 
 ---
 
