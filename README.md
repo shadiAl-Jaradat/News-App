@@ -70,6 +70,7 @@ https://github.com/user-attachments/assets/abb159ab-a527-4f3d-ad08-778fe5939564
 ## Project Architecture
 
 Here’s a detailed breakdown of the `lib/` directory and its subfolders:
+<img width="1246" height="1680" alt="newsappArc" src="https://github.com/user-attachments/assets/55a6008a-7b99-498b-bcf8-4ad82a9eaa33" />
 
 
 ---
