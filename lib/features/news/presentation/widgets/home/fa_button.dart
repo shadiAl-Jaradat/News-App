@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_app/features/news/presentation/bloc/view_mode/view_mode_cubit.dart';
 
 class FaButton extends StatelessWidget {
@@ -82,7 +83,7 @@ class _ViewToggleFabState extends State<ViewToggleFab> with SingleTickerProvider
             child: AnimatedRotation(
               turns: widget.isGridView ? 0.0 : 0.5,
               duration: const Duration(milliseconds: 200),
-              child: Icon(widget.isGridView ? Icons.view_list_rounded : Icons.grid_view_rounded, size: 24),
+              child: Icon(widget.isGridView ? Icons.view_list_rounded : Icons.grid_view_rounded, size: 24.w > 34 ? 34 : 24.w),
             ),
           ),
         );
