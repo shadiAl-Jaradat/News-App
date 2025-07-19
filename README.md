@@ -47,8 +47,17 @@ maintainability, and a seamless user experience across platforms.
 > _Add demo videos here_
 
 - [ ] Home Responsive Demo
+
+https://github.com/user-attachments/assets/694ae490-5aa7-448a-8850-e56e0e35f8d7
+
 - [ ] Article Details Responsive Demo
+
+https://github.com/user-attachments/assets/241aafae-de06-4ca6-b44c-8c811a2080cc
+
 - [ ] Search Demo
+
+https://github.com/user-attachments/assets/abb159ab-a527-4f3d-ad08-778fe5939564
+
 
 ---
 
