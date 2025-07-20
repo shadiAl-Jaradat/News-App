@@ -5,7 +5,7 @@ import 'app/app.dart';
 import 'app/app_bootstrap.dart';
 
 void main() async {
-  HttpOverrides.global = MyHttpOverrides(); // Development only!
+  HttpOverrides.global = MyHttpOverrides();
   await AppBootstrap.init();
   runApp(const App());
 }

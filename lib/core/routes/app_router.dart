@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:news_app/features/news/domain/entities/article.dart';
+import 'package:news_app/features/news/presentation/screens/article_details_screen.dart';
+import 'package:news_app/features/news/presentation/screens/home_screen.dart';
 import 'package:news_app/shared/screens/error_screen.dart';
-import '../../features/news/presentation/screens/home_screen.dart';
-import '../../features/news/presentation/screens/article_details_screen.dart';
-import '../../features/news/domain/entities/article.dart';
 import 'route_paths.dart';
 import 'route_names.dart';
 

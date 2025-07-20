@@ -53,7 +53,6 @@ class ApiClient {
     try {
       final data = error.response?.data;
       if (data != null && data is Map<String, dynamic> && data['errors'] != null) {
-        // Handle array format: {"errors": ["The API key is required."]}
         if (data['errors'] is List) {
           final List errors = data['errors'];
           if (errors.isNotEmpty) {
@@ -61,7 +60,6 @@ class ApiClient {
           }
         }
 
-        // Handle object format: {"errors": {"q": "The query has a syntax error..."}}
         if (data['errors'] is Map) {
           final Map<String, dynamic> errors = data['errors'];
           if (errors.isNotEmpty) {

@@ -134,6 +134,49 @@ This separation ensures that the UI and business logic are decoupled from low-le
 - [Flutter SDK](https://flutter.dev/docs/get-started/install) (latest stable version)
 - Dart
 
+----
+
+### Code Style
+
+#### Imports
+
+- Order:
+  1- Dart/Flutter SDK imports
+  2- Third-party package imports
+  3- Project imports (using `package:news_app/...`)
+
+- No relative imports across modules; always  use `package:news_app/...` for internal imports.
+
+
+#### File & Folder Structure
+
+Follow feature-first and DDD-inspired structure
+```
+lib/
+    core/
+    features/
+      news/
+        data/
+        domain/
+        presentation/
+    shared/
+    app/
+```
+
+Use snake_case for file and folder names.
+
+Use PascalCase for class names.
+
+
+#### Formatting
+
+- Always run 
+`dart format -l 140 --set-exit-if-changed .`before committing.
+- Keep lines under 140 characters when possible.
+- Remove unused imports and variables.
+
+----
+
 ### Installation
 ```bash
 # Clone the repository

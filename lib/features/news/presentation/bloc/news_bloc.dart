@@ -15,11 +15,9 @@ class NewsBloc extends Bloc<NewsEvent, NewsState> {
   }
 
   void _onGetNews(GetNewsEvent event, Emitter<NewsState> emit) async {
-    // Show loading only if not a refresh
     if (!event.isRefresh) {
       emit(const NewsLoading());
     } else {
-      // Show refreshing state with current articles if available
       if (state is NewsLoaded) {
         emit(NewsRefreshing(currentArticles: (state as NewsLoaded).articles));
       } else {

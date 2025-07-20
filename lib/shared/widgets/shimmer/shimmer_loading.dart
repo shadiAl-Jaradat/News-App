@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../core/theme/app_colors.dart';
+import 'package:news_app/core/theme/app_colors.dart';
 
 class ShimmerLoading extends StatefulWidget {
   final Widget child;

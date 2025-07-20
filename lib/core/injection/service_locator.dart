@@ -15,8 +15,7 @@ import 'package:news_app/features/news/presentation/bloc/view_mode/view_mode_cub
 final locator = GetIt.instance;
 
 Future<void> init() async {
-  //! Features - News
-  // BLoCs and Cubits - Register as Factory (new instance each time)
+  // BLoCs and Cubits
   locator.registerFactory(() => NewsBloc(getArticles: locator(), getMockArticles: locator()));
   locator.registerFactory(() => SearchCubit());
   locator.registerFactory(() => ViewModeCubit());
@@ -34,10 +33,10 @@ Future<void> init() async {
   locator.registerLazySingleton<NewsRemoteDataSource>(() => NewsRemoteDataSourceImpl(apiClient: locator()));
   locator.registerLazySingleton<NewsMockDataSource>(() => NewsMockDataSourceImpl());
 
-  //! Core
+  // Core
   locator.registerLazySingleton(() => ApiClient());
   locator.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(locator()));
 
-  //! External
+  // External
   locator.registerLazySingleton(() => Connectivity());
 }

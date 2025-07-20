@@ -17,9 +17,7 @@ class NewsFeatureBlocWrapper extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider<NewsBloc>(create: (context) => locator<NewsBloc>()..add(const GetNewsEvent())),
-
         BlocProvider<SearchCubit>(create: (context) => locator<SearchCubit>()),
-
         BlocProvider<ViewModeCubit>(create: (context) => locator<ViewModeCubit>()),
       ],
       child: child,
