@@ -49,7 +49,6 @@ maintainability, and a seamless user experience across platforms.
 ---
 
 ## Demo Videos
-> _Add demo videos here_
 
 - [ ] Home Responsive Demo
 
