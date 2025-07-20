@@ -1,9 +1,13 @@
 # News App
 
+**News App** is a modern Flutter application that delivers the latest news articles from various sources. It features a
+clean UI, robust architecture, and advanced state management using BLoC/Cubit.
+
+<img width="400" height="400" alt="newsAppRounded" src="https://github.com/user-attachments/assets/09d32bd1-95be-4b2e-a63d-98b2352f452c" />
+
 ---
 
 ## Table of Contents
-- [Overview](#overview)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Demo Videos](#demo-videos)
@@ -13,14 +17,6 @@
 - [Error Handling](#error-handling)
 - [Theming & Responsiveness](#theming--responsiveness)
 - [Getting Started](#getting-started)
-
----
-
-## Overview
-
-**News App** is a modern Flutter application that delivers the latest news articles from various sources. It features a
-clean UI, robust architecture, and advanced state management using BLoC/Cubit. The app is designed for scalability,
-maintainability, and a seamless user experience across platforms.
 
 ---
 
@@ -67,7 +63,7 @@ https://github.com/user-attachments/assets/abb159ab-a527-4f3d-ad08-778fe5939564
 
 ## Project Architecture
 
-Here’s a detailed breakdown of the `lib/` directory and its subfolders:
+Here's a detailed breakdown of the `lib/` directory and its subfolders:
 <img width="1246" height="1680" alt="newsappArc" src="https://github.com/user-attachments/assets/55a6008a-7b99-498b-bcf8-4ad82a9eaa33" />
 
 
@@ -89,7 +85,7 @@ Here’s a detailed breakdown of the `lib/` directory and its subfolders:
 2. **Event Dispatch**: UI dispatches events to BLoC/Cubit.
 3. **Use Case Execution**: BLoC calls domain use cases (e.g., `GetArticles`).
 4. **Repository**: Use case invokes repository.
-5. **Data Source**: Repository fetches data from API using Api Client (via `dio`) or local mock JSON.
+5. **Data Source**: Repository fetches data from API using Api Client (via `dio`) or local mock JSON (Testing).
 6. **DTO Mapping**: Data is mapped from DTOs to domain entities.
 7. **State Update**: BLoC emits new state, updating the UI.
 8. **Error Handling**: Failures are caught and surfaced to the UI with retry options.
@@ -101,18 +97,18 @@ Here’s a detailed breakdown of the `lib/` directory and its subfolders:
 ### Failures vs. Exceptions
 
 - **Exceptions** are technical errors that occur at the infrastructure or data source level (e.g., network issues, server errors, parsing problems). They are thrown by the lower layers (API client, data sources) and are not meant to be shown directly to the user.
-- **Failures** are domain-level representations of errors. They are created by catching exceptions and mapping them to user-friendly, business-meaningful error types in the repository layer. The app’s domain and presentation layers only deal with Failures, never raw Exceptions.
+- **Failures** are domain-level representations of errors. They are created by catching exceptions and mapping them to user-friendly, business-meaningful error types in the repository layer. The app's domain and presentation layers only deal with Failures, never raw Exceptions.
 
 **Example Flow:**
 - The API client or data source throws a `ServerException` or `NetworkException`.
 - The repository catches these exceptions and converts them to a `ServerFailure` or `NetworkFailure`.
 - The BLoC receives a `Failure` and updates the UI state accordingly.
 
-This separation ensures that the UI and business logic are decoupled from low-level technical details, making the app more robust, testable, and maintainable.
+This separation ensures that the UI and business logic are decoupled from low-level technical details.
 
 ### Mock Data Source and Use Case
 - `NewsMockDataSource` and the mock use case (`GetMockArticles`) are **only for testing and development**.
-- In the BLoC, you’ll see a comment:
+- In the BLoC, you'll see a comment:
   ```dart
   /// For testing purposes, we use mock data uncomment the line below and comment the line above
   // final result = await getMockArticles();
@@ -153,4 +149,3 @@ $ flutter run
 # Run on web 
 $ flutter run -d chrome --web-browser-flag "--disable-web-security"
 ```
-
